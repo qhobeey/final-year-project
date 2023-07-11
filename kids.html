@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kids</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <meta name="theme-color" content="#712cf9" />
+
+    <!-- Custom styles for this template -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="border-bottom lh-1 py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1"></div>
+          <div class="col-4 text-center">
+            <a
+              class="blog-header-logo text-body-emphasis text-decoration-none"
+              href="./index.html"
+              ><img src="./images/logo.png" alt="logo" class="logo"
+            /></a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="link-secondary" href="#" aria-label="Search">
+              <img
+                class="basket"
+                src="./images/shopping-online.png"
+                alt="basket"
+              />
+              <span>0</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav nav-underline justify-content-between">
+          <a
+            class="nav-item nav-link link-body-emphasis active"
+            href="./index.html"
+            >Homepage</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="./men.html"
+            >Men</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="./women.html"
+            >Women</a
+          >
+          <a
+            class="nav-item nav-link link-body-emphasis active"
+            href="./kids.html"
+            >Kids</a
+          >
+          <a
+            class="nav-item nav-link link-body-emphasis"
+            href="./accessories.html"
+            >Accessories</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="./contact.html"
+            >Contact</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="./offers.html"
+            >Offers</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="./about.html"
+            >About us</a
+          >
+        </nav>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <!-- Sidebar -->
+          <div class="row sidebr">
+            <ul>
+              <li>
+                <p onclick="toggleDropdownDisplayed(this)">Size</p>
+                <div class="bt">
+                  <ul>
+                    <li>Medium</li>
+                    <li>Large</li>
+                    <li>Small</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <p onclick="toggleDropdownDisplayed(this)">Category</p>
+                <div class="bt">
+                  <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Accessories</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <p onclick="toggleDropdownDisplayed(this)">Colour</p>
+                <div class="bt">
+                  <ul>
+                    <li>Red</li>
+                    <li>Blue</li>
+                    <li>Green</li>
+                    <li>White</li>
+                    <li>Black</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <p onclick="toggleDropdownDisplayed(this)">Price</p>
+                <div class="bt">
+                  <ul>
+                    <li>0 - 99</li>
+                    <li>100 - 599</li>
+                    <li>600 +</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <p onclick="toggleDropdownDisplayed(this)">Material</p>
+              </li>
+              <li>
+                <p>Top Rated</p>
+              </li>
+              <li>
+                <p>In Offer</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="row row-cols-1 row-cols-md-3 g-4 rd-cd">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://s3-eu-west-1.amazonaws.com/images.linnlive.com/fd3ce6efcb27f4bc70d1761b3534a302/70e53e7c-9a19-450e-ae75-9082f54b241e.jpg"
+                  class="card-img-top"
+                  alt="Skyscrapers"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">School Shoes</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://media.crocs.com/images/t_pdphero/f_auto%2Cq_auto/products/12856_4SL_ALT120/crocs"
+                  class="card-img-top"
+                  alt="Los Angeles Skyscrapers"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Sandals</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://i.ebayimg.com/images/g/hu4AAOSwccxjIvu~/s-l1200.webp"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Canvas</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://i.ebayimg.com/images/g/EF4AAOSwRgljnOQ~/s-l1200.webp"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Trainers</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://m.media-amazon.com/images/I/61HkxdsBSXL._AC_UY1000_.jpg"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Shoes</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://www.sportsdirect.com/images/marketing/kids-fw-thumb-1-m.jpg"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Sport Shoes</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://www.parents.com/thmb/rsE_u0pivgrGBb6UCdWs7inYmMA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/he-north-face-kids-alpenglow-iv-toddler-little-kid-big-kid-hero-blue-bd3729ee6c89495e836c0c7c25d0795c.jpg"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Boots</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://footwearnews.com/wp-content/uploads/2023/03/6_3-11_Detail_1080x1920-15.jpg"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Mario Shoes</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0475/6799/5045/products/nike-kids-nike-shoes-infants-renew-element-55-black-white-74403_a6d2d197-cca6-42e6-9f0d-311621e32a91.jpg?v=1604006876"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Black Shoes</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

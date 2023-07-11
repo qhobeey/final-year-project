@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Men</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <meta name="theme-color" content="#712cf9" />
+
+    <!-- Custom styles for this template -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="border-bottom lh-1 py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1"></div>
+          <div class="col-4 text-center">
+            <a
+              class="blog-header-logo text-body-emphasis text-decoration-none"
+              href="./index.html"
+              ><img src="./images/logo.png" alt="logo" class="logo"
+            /></a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="link-secondary" href="#" aria-label="Search">
+              <img
+                class="basket"
+                src="./images/shopping-online.png"
+                alt="basket"
+              />
+              <span>0</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav nav-underline justify-content-between">
+          <a class="nav-item nav-link link-body-emphasis" href="./index.html"
+            >Homepage</a
+          >
+          <a
+            class="nav-item nav-link link-body-emphasis active"
+            href="./men.html"
+            >Men</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="./women.html"
+            >Women</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="./kids.html"
+            >Kids</a
+          >
+          <a
+            class="nav-item nav-link link-body-emphasis"
+            href="./accessories.html"
+            >Accessories</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="./contact.html"
+            >Contact</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="./offers.html"
+            >Offers</a
+          >
+          <a class="nav-item nav-link link-body-emphasis" href="./about.html"
+            >About us</a
+          >
+        </nav>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <!-- Sidebar -->
+          <div class="row sidebr">
+            <ul>
+              <li>
+                <p onclick="toggleDropdownDisplayed(this)">Size</p>
+                <div class="bt">
+                  <ul>
+                    <li>Medium</li>
+                    <li>Large</li>
+                    <li>Small</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <p onclick="toggleDropdownDisplayed(this)">Category</p>
+                <div class="bt">
+                  <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Accessories</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <p onclick="toggleDropdownDisplayed(this)">Colour</p>
+                <div class="bt">
+                  <ul>
+                    <li>Red</li>
+                    <li>Blue</li>
+                    <li>Green</li>
+                    <li>White</li>
+                    <li>Black</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <p onclick="toggleDropdownDisplayed(this)">Price</p>
+                <div class="bt">
+                  <ul>
+                    <li>0 - 99</li>
+                    <li>100 - 599</li>
+                    <li>600 +</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <p onclick="toggleDropdownDisplayed(this)">Material</p>
+              </li>
+              <li>
+                <p>Top Rated</p>
+              </li>
+              <li>
+                <p>In Offer</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="row row-cols-1 row-cols-md-3 g-4 rd-cd">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://m.media-amazon.com/images/I/81VqERm0W+L._AC_UY1000_.jpg"
+                  class="card-img-top"
+                  alt="Skyscrapers"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Casual</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://www.cavani.co.uk/images/house-of-cavani-ethan-brogue-shoes-p684-17806_thumb.jpg"
+                  class="card-img-top"
+                  alt="Los Angeles Skyscrapers"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Shoes</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://m.media-amazon.com/images/I/816RYTJvZ+L._AC_UY1000_.jpg"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Boots</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0113/6839/8948/products/nffc-mens-navy-mule-slippers-nottingham-forest-fc-587684_1200x1200_crop_center.jpg?v=1678794354"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Slippers</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://m.media-amazon.com/images/I/71shCZQYBGL._AC_UY1000_.jpg"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Trainers</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://m.media-amazon.com/images/I/81pJBdq7HLL._AC_UY1000_.jpg"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Smart Styles</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Black Shoes</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://www.widerfitshoes.co.uk/products/images/group/MCN1?image2=ADAM4"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Wide Fit Shoes</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZZVGYXyYYj-I4VrefC2KsZOdHcMHHnfRPuP_oq2N-R375YCkzU59EzqU4goMlHFcvHNw&usqp=CAU"
+                  class="card-img-top"
+                  alt="Palm Springs Road"
+                />
+
+                <div
+                  class="card-footer"
+                  onclick="toggleDropdownDisplayed(this)"
+                >
+                  <small class="text-muted">Sandals</small>
+                </div>
+                <div class="ov">
+                  <h4>Flip Flop - $700.00</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis, nemo cupiditate amet doloremque molestias aut sed
+                    totam accusantium itaque repellendus dignissimos dolore quas
+                    alias numquam facilis voluptatum quod a fuga?
+                  </p>
+                  <button
+                    onclick="closeProductDisplay(this)"
+                    class="btn buynow"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
